@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$base-color-1: #4C858B;
+$base-color-2: #EA6628;
+$color-cherry: #AE2236;
+$color-red: #E33E54;
+$color-grey: #E5E5E5;
+
+@import "global.scss";
+@import "header.scss";
+@import "main.scss";
+@import "media.scss";
+@import "footer.scss";
+

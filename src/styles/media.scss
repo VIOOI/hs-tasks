@@ -1,0 +1,134 @@
+@media screen and (max-width: 1550px) {
+	.contacts_buttom {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.contacts_number {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1190px) {
+	.header {
+		justify-content: space-around;
+		column-gap: 2rem;
+		.menu {
+			flex-grow: 1;
+		}
+	}
+	.menu_list {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.two_column {
+		display: flex;
+		& > div:first-child { width: 100%; }
+		& > div:last-child { width: 0%; }
+	}
+	.flue_image {
+		display: none;
+	}
+}
+@media screen and (max-width: 1190px) {
+	.gallery {
+		width: 94%;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.cart_list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.cart {
+		width: 45%;
+		min-width: 260px;
+	}
+	.form .form_banner {
+		width: 90%;
+	}
+
+}
+@media screen and (max-width: 850px) {
+	.custom_list {
+		grid-auto-flow: row;
+		grid-template-rows: repeat(1, 1fr);
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.wrapper {
+		width: 97%;
+	}
+	.gallery {
+		width: 94%;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.video img {
+		width: calc(var(--index) * 36);
+		// position: absolute;
+		top: 2.5rem;
+		// left: 49%;
+		// transform: translateX(-50%);
+	}
+	.video .video_bg {
+		width: 1px;
+		height: 1px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		img {
+			position: absolute;
+			&:nth-child(1) {
+				width: calc(var(--index) * 25);
+				top: calc(var(--index) * 5);
+				left: calc(var(--index) * -11.5);
+			}
+			&:nth-child(2) {
+				width: calc(var(--index) * 34);
+				top: calc(var(--index) * 2);
+				left: calc(var(--index) * 8.5);
+			}
+			&:nth-child(3) {
+				width: 30px;
+				top: calc(var(--index) * 1.7);
+				left: calc(var(--index) * 21.2);
+			}
+			&:nth-child(4) {
+				width: 30px;
+				top: calc(var(--index) * 10.7);
+				left: calc(var(--index) * -21.7);
+			}
+		}
+	}
+	.form .form_banner {
+		height: 20rem;
+		form {
+			flex-direction: column;
+			row-gap: 0.5rem;
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+	.gallery {
+		width: 94%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.cart_list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.cart {
+		width: 80%;
+		min-width: 260px;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 450px) {
+	.gallery {
+		width: 94%;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

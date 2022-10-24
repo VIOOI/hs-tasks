@@ -1,0 +1,19 @@
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+	list-style-type: none;
+	--index: calc(1vw + 1vh);
+}
+body { counter-reset: list-count; }
+a{ color: inherit; text-decoration: none; }
+
+.bold { font-weight: 700; }
+
+.pt-3 { padding-top: 3.0rem; }
+
+.text-base { color: $base-color-1; }
+.text-red { color: $color-red; }
+.text-orenge { color: $base-color-2; }

@@ -1,0 +1,80 @@
+.footer {
+	margin-top: 2rem;
+	min-height: 350px;
+	background: #0C2F33;
+	color: white;
+	padding: 2rem;
+	& > div {
+		display: flex;
+		width: 64vw;
+		justify-content: start;
+		align-items: start;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 90px);
+		grid-template-areas: "catalog info time" "catalog info social" ;
+		column-gap: 9%;
+		row-gap: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 3rem;
+	}
+	&_title {
+		margin-bottom: .75rem;
+		font-size: 1.25rem;
+	}
+	&_section{
+		&:nth-child(1) { grid-area: catalog; }
+		&:nth-child(2) { grid-area: info; }
+		&:nth-child(3) { grid-area: time; }
+		&:nth-child(4) { grid-area: social; }
+	}
+	&_list {
+		display: grid;
+		grid-template-rows: repeat(4, 30px);
+		grid-auto-flow: column;
+		column-gap: 20%;
+		font-size: 0.75rem; 
+		line-height: 1rem;
+	}
+	&_contacts {
+		.footer_title { margin-bottom: 5px; }
+		font-size: 14px; 
+		line-height: 1rem;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.85rem;
+		& div {
+			display: flex;
+			align-items: center;
+			column-gap: 0.25rem;
+			& span { color: #4C858B; }
+			img { margin-right: 0.25rem; }
+			
+		}
+	}
+	.social_list {
+		// justify-content: center;
+		column-gap: 2rem;
+		img {
+			height: 20px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.display-none { display: none; }
+	.footer {
+		& > div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		min-height: 10px;
+	}
+}
+
