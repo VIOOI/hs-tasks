@@ -1,14 +1,14 @@
 import './styles/style.scss'
 
 
-document.querySelector(".shopping")?.addEventListener('click', (event) => {
+document.querySelector(".shopping")?.addEventListener('click', (_) => {
 	let shop_count = document.querySelector(".shopping_count") as HTMLDivElement
 	let count = parseInt(shop_count.innerText);
 
 	shop_count.innerText = `${count + 1}`;
 })
 
-document.querySelector("#cont_form")?.addEventListener( 'click', event => {
+document.querySelector("#cont_form")?.addEventListener( 'click', _ => {
 	let name = document.querySelector("#name") as HTMLInputElement;
 	let tel = document.querySelector("#telephone") as HTMLInputElement;
 	// console.log(name.value);
