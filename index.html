@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AJAX homework</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body class="bg-neutral-800 min-h-screen">
+	<div 
+		class="page-wrapper bg-neutral-800 p-[30px] flex flex-col text-white"
+		>
+		<p class="text-xl font-extralight mb-3">
+			Введите свое имя пользователя на GitHub
+		</p>
+		<form class="flex items-center mb-8">
+			<input 
+				class="
+					w-64 py-2 px-5
+					text-neutral-800
+					placeholder:font-extralight placeholder:text-sm
+					rounded-lg mr-3 js-input
+				" 
+				type="text" 
+				name="name" 
+				placeholder="Введите свое имя GitHub"
+			>
+			<button 
+				type="button" 
+				class="
+					w-44 py-2
+					cursor-pointer
+					rounded-lg
+					bg-blue-500 hover:bg-blue-600
+					js-load
+				"
+			> Загрузить данные </button>
+			<button 
+				type="button" 
+				class="
+					w-56 py-2 ml-3
+					cursor-pointer
+					rounded-lg
+					bg-blue-500 hover:bg-blue-600
+					load-user
+				"
+			> Загрузить пользователей </button>
+		</form>
+
+		<div class="response-container wasm-results flex gap-x-5 items-end h-52 mb-10">
+		</div>
+			
+	</div>
+<script src="scripts.js" type="module"></script>
+</body>
+
+</html>

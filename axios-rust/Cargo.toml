@@ -1,0 +1,38 @@
+[package]
+name = "axios-rust"
+version = "0.1.0"
+authors = ["Vladimir Below <laitvladimir@yandex.ru>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+wasm-bindgen = "0.2.63"
+wasm-bindgen-futures = "0.4.33"
+
+serde-wasm-bindgen = "0.4.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0.147"
+serde_json = "1.0.87"
+serde-json-wasm = "0.4.1"
+
+reqwest-wasm = "0.11.15"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+	'Window',
+	'HtmlInputElement',
+	'HtmlButtonElement',
+	'HtmlDivElement',
+]
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
